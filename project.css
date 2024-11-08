@@ -12,22 +12,14 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url('ecccomerce.jpeg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
-    background-image: url('ecccomerce.jpeg'); /* Replace with the path to your image */  
-    background-size: cover; /* Ensures the image covers the entire section */  
-    background-position: center; /* Centers the image */  
-    height: 100vh; /* Sets the height of the section, adjust as needed */  
-    display: flex; /* Aligns content */  
-    justify-content: center; /* Centers content horizontally */  
-    align-items: center; /* Centers content vertically */  
-    color: white; /* Sets text color for better contrast */  
-    text-align: center; /* Centers text */  
+   
 }
 
 .hero-content h1 {
