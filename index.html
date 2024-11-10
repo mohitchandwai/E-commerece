@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Your Website</title>  
     <link rel="stylesheet" href="project.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-IYd1TEDzTythIQd5aK3bFh6dxDQi4XLPiWW8Tlmg0uroHpERLsM8QuSOFUpqhBMZdabcH9IaF28F3rWpM3ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <script src="project.js" defer></script> <!-- Use 'defer' to ensure the script loads after the document is parsed -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />  
 </head>  
 <body>  
     <!-- Hero Section -->  
     <header class="hero">  
-        <div class="hero-content">  
+        <div class="hero-content animate__animated animate__fadeIn">  
             <h1>Innovating the Future of Your Service</h1>  
             <p>Discover groundbreaking solutions tailored for your business needs.</p>  
             <a href="#features" class="cta-btn">Get Started</a>  
@@ -22,17 +24,17 @@
     <section id="features" class="features">  
         <h2>Why Choose Us</h2>  
         <div class="feature-grid">  
-            <div class="feature">  
+            <div class="feature animate__animated animate__flipInX">  
                 <i class="icon fas fa-shipping-fast"></i>  
                 <h3>Fast Delivery</h3>  
                 <p>Our services ensure timely solutions.</p>  
             </div>  
-            <div class="feature">  
+            <div class="feature animate__animated animate__flipInX" style="animation-delay: 0.1s;">  
                 <i class="icon fas fa-cogs"></i>  
                 <h3>Custom Solutions</h3>  
                 <p>Tailored specifically for your unique needs.</p>  
             </div>  
-            <div class="feature">  
+            <div class="feature animate__animated animate__flipInX" style="animation-delay: 0.2s;">  
                 <i class="icon fas fa-headset"></i>  
                 <h3>24/7 Support</h3>  
                 <p>We’re here whenever you need us.</p>  
@@ -51,12 +53,12 @@
     <section class="testimonials">  
         <h2>What Our Clients Say</h2>  
         <div class="testimonial-carousel">  
-            <div class="testimonial">  
+            <div class="testimonial animate__animated animate__fadeInLeft">  
                 <p>"This company is amazing! Fast and reliable services."</p>  
                 <h3>- Jane Doe</h3>  
                 <div class="stars">⭐⭐⭐⭐⭐</div>  
             </div>  
-            <div class="testimonial">  
+            <div class="testimonial animate__animated animate__fadeInLeft" style="animation-delay: 0.1s;">  
                 <p>"Exceeded all my expectations. Highly recommend!"</p>  
                 <h3>- John Smith</h3>  
                 <div class="stars">⭐⭐⭐⭐⭐</div>  
@@ -68,11 +70,11 @@
     <section class="portfolio">  
         <h2>Our Work</h2>  
         <div class="portfolio-grid">  
-            <div class="portfolio-item">  
+            <div class="portfolio-item animate__animated animate__zoomIn">  
                 <img src="project1.jpg" alt="Project 1">  
                 <h3>Project 1</h3>  
             </div>  
-            <div class="portfolio-item">  
+            <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 0.1s;">  
                 <img src="project2.jpg" alt="Project 2">  
                 <h3>Project 2</h3>  
             </div>  
@@ -83,12 +85,12 @@
     <section class="blog">  
         <h2>Latest Insights</h2>  
         <div class="blog-grid">  
-            <div class="blog-post">  
+            <div class="blog-post animate__animated animate__fadeInUp">  
                 <img src="blog1.jpg" alt="Blog 1">  
                 <h3>How Technology is Shaping the Future</h3>  
                 <a href="#" class="read-more">Read More</a>  
             </div>  
-            <div class="blog-post">  
+            <div class="blog-post animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">  
                 <img src="blog2.jpg" alt="Blog 2">  
                 <h3>Top 5 Innovations in 2024</h3>  
                 <a href="#" class="read-more">Read More</a>  
@@ -100,8 +102,8 @@
     <section class="newsletter">  
         <h2>Stay Updated</h2>  
         <p>Join our community for the latest updates and exclusive content.</p>  
-        <form class="newsletter-form">  
-            <input type="email" placeholder="Your Email" required>  
+        <form class="newsletter-form" id="newsletter-form">  
+            <input type="email" id="email" placeholder="Your Email" required>  
             <button type="submit">Subscribe</button>  
         </form>  
     </section>  
@@ -115,9 +117,9 @@
                 <li><a href="Contact_page.html">Contact</a></li>  
             </ul>  
             <div class="social-media">  
-                <a href="#"><i class="fab fa-facebook-f"></i></a>  
-                <a href="#"><i class="fab fa-twitter"></i></a>  
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>  
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>  
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>  
             </div>  
         </div>  
     </footer>  
