@@ -201,3 +201,36 @@ body {
     margin: 0 10px;
     font-size: 1.5rem;
 }
+
+/* General Button Styles */  
+.signin-btn {  
+    background-color: #007bff;  /* Bootstrap primary color */  
+    color: white;                /* Text color */  
+    padding: 12px 20px;          /* Vertical and horizontal padding */  
+    border: none;                /* No border */  
+    border-radius: 5px;         /* Rounded corners */  
+    text-align: center;          /* Centered text */  
+    text-decoration: none;       /* Remove underline */  
+    display: inline-block;       /* Allow padding and margin */  
+    font-size: 16px;             /* Font size */  
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */  
+}  
+
+/* Hover Effect */  
+.signin-btn:hover {  
+    background-color: #0056b3;  /* Darker shade for hover effect */  
+    transform: translateY(-2px); /* Lift effect */  
+}  
+
+/* Active Effect */  
+.signin-btn:active {  
+    background-color: #004085;   /* Even darker shade on click */  
+    transform: translateY(0);     /* Reset lift effect */  
+}  
+
+/* Disabled State */  
+.signin-btn:disabled {  
+    background-color: #c0c0c0;    /* Light gray */  
+    color: #6c757d;                /* Dark gray text */  
+    cursor: not-allowed;           /* Not allowed cursor */  
+}
