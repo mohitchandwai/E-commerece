@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #5cb85c;
+            border: none;
+            color: #fff;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #4cae4c;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+            display: grid;
+            gap: 10px;
+            color: #444;
+            text-align: center;
+        }
+
+        .contact-details h3 {
+            font-size: 1.5em;
+        }
+
+        .contact-details p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #666;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .contact-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p class="subtitle">We’re here to help and answer any questions you may have.</p>
+
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="subject">
+                <option value="" disabled selected>Subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Phone 1:</strong> +91 7451030995</p>
+            <p><strong>Phone 2:</strong> +91 7668352855</p>
+            <p><strong>Phone 3:</strong> +91 7651920924</p>
+            <p><strong>Phone 4:</strong> +91 8354944445</p>
+            <p><strong>Email:</strong> jaibabaki@sher.com</p>
+            <p><strong>Business Hours:</strong> Mon - Fri, 9 AM - 5 PM</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" title="Facebook">&#xf09a;</a>
+            <a href="#" title="Twitter">&#xf099;</a>
+            <a href="#" title="Instagram">&#xf16d;</a>
+            <a href="#" title="LinkedIn">&#xf0e1;</a>
+        </div>
+    </div>
+
+</body>
+</html>
