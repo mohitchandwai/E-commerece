@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerece</title>
+    <title>E-Commerce</title>
     <link rel="stylesheet" href="project.css">
-    <link rel="project" href="project.js">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <!-- Hero Section -->
-   <img src="ecccomerce.jpeg" alt="E-commerce Image">  
-<header class="hero">  
-    <div class="hero-content">  
-        <h1 style="color:black;">Innovating the Future of Your Service</h1>  
-        <p style="color:black;">Discover groundbreaking solutions tailored for your business needs.</p>  
-        <a href="#features" class="cta-btn">Get Started</a>  
-    </div>  
-</header>
+    <header class="hero">
+        <img src="ecccomerce.jpeg" alt="E-commerce Image">  
+        <div class="hero-content">  
+            <h1>Innovating the Future of Your Service</h1>  
+            <p>Discover groundbreaking solutions tailored for your business needs.</p>  
+            <a href="#features" class="cta-btn">Get Started</a>  
+        </div>  
+    </header>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <h2>Why Choose Us</h2>
@@ -40,11 +42,34 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us">
-        <h2>Who We Are</h2>
-        <p>With over 10 years of experience, we’re passionate about creating innovative solutions.</p>
-        <img src="team.jpg" alt="Our Team">
-        
+    <section id="about" class="about-us">
+        <div class="about-container">
+            <h1 class="about-title">About Us</h1>
+            <div id="companyOverview" class="about-section">
+                <h3>Company Overview</h3>
+                <p></p>
+            </div>
+            <div id="missionValues" class="about-section">
+                <h3>Our Mission & Values</h3>
+                <p></p>
+            </div>
+            <div id="brandStory" class="about-section">
+                <h3>The Story Behind Our Brand</h3>
+                <p></p>
+            </div>
+            <div id="productPhilosophy" class="about-section">
+                <h3>Our Product Philosophy</h3>
+                <p></p>
+            </div>
+            <div id="customerCommitment" class="about-section">
+                <h3>Customer Commitment</h3>
+                <p></p>
+            </div>
+            <div id="futureGoals" class="about-section">
+                <h3>Future Goals & Vision</h3>
+                <p></p>
+            </div>
+        </div>
     </section>
 
     <!-- Testimonials Section -->
@@ -64,55 +89,13 @@
         </div>
     </section>
 
-    <!-- Portfolio/Products Section -->
-    <section class="portfolio">
-        <h2>Our Work</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog">
-        <h2>Latest Insights</h2>
-        <div class="blog-grid">
-            <div class="blog-post">
-                <img src="blog1.jpg" alt="Blog 1">
-                <h3>How Technology is Shaping the Future</h3>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="blog-post">
-                <img src="blog2.jpg" alt="Blog 2">
-                <h3>Top 5 Innovations in 2024</h3>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Join our community for the latest updates and exclusive content.</p>
-        <form class="newsletter-form">
-            <input type="email" placeholder="Your Email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <ul class="footer-links">
-                <li><a href="About_Section.html">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#features">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -122,7 +105,31 @@
         </div>
     </footer>
 
-    <!-- JavaScript (for testimonial carousel, etc.) -->
-    <script src="script.js"></script>
+    <!-- JavaScript for Dynamic Content -->
+    <script>
+        // Dynamic content for the About Us section
+        const aboutContent = {
+            companyOverview: "We’re dedicated to bringing you unique products with a focus on quality, affordability, and reliability.",
+            missionValues: "Our mission is to make shopping easy and enjoyable while ensuring quality and sustainability in every product.",
+            brandStory: "It all started with a passion to bring high-quality products at affordable prices, turning our dream into a reality.",
+            productPhilosophy: "We carefully curate our selection to offer only the finest materials and designs.",
+            customerCommitment: "We’re here to make sure your shopping experience is nothing short of amazing!",
+            futureGoals: "We’re excited to expand our collection and continue growing our community of happy customers."
+        };
+
+        // Populate the About Us content dynamically
+        function populateAboutSection() {
+            document.getElementById("companyOverview").querySelector('p').textContent = aboutContent.companyOverview;
+            document.getElementById("missionValues").querySelector('p').textContent = aboutContent.missionValues;
+            document.getElementById("brandStory").querySelector('p').textContent = aboutContent.brandStory;
+            document.getElementById("productPhilosophy").querySelector('p').textContent = aboutContent.productPhilosophy;
+            document.getElementById("customerCommitment").querySelector('p').textContent = aboutContent.customerCommitment;
+            document.getElementById("futureGoals").querySelector('p').textContent = aboutContent.futureGoals;
+        }
+
+        // Call function to populate About Us content on page load
+        window.onload = populateAboutSection;
+    </script>
+
 </body>
 </html>
