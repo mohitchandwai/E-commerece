@@ -20,6 +20,7 @@ body {
     color: #fff;  
     text-align: center;  
     position: relative;  
+    padding: 20px;  
 }  
 
 .hero-content h1 {  
@@ -28,21 +29,20 @@ body {
 }  
 
 .hero-content p {  
-    font-size: 1.5rem;  
+    font-size: 1.25rem; /* Slightly adjusted for better readability */  
     margin: 20px 0;  
     animation: fadeInUp 1s ease;  
     animation-delay: 0.5s;  
-    opacity: 0;  
 }  
 
 .cta-btn {  
     background: #ff5a5f;  
     color: white;  
-    padding: 10px 20px;  
+    padding: 12px 24px; /* Increased padding for a more significant button */  
     text-decoration: none;  
     border-radius: 5px;  
     font-size: 1.2rem;  
-    transition: background 0.3s, transform 0.3s;  
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box shadow on hover */  
     animation: fadeIn 1s ease;  
     opacity: 0;  
     animation-delay: 1s;  
@@ -51,22 +51,39 @@ body {
 .cta-btn:hover {  
     background: #ff4040;  
     transform: translateY(-2px);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced hover effect */  
 }  
 
 /* Fade In Animation */  
 @keyframes fadeIn {  
-    0% { opacity: 0; }  
-    100% { opacity: 1; }  
+    0% {  
+        opacity: 0;  
+    }  
+    100% {  
+        opacity: 1;  
+    }  
 }  
 
 @keyframes fadeInDown {  
-    0% { opacity: 0; transform: translateY(-20px); }  
-    100% { opacity: 1; transform: translateY(0); }  
+    0% {  
+        opacity: 0;  
+        transform: translateY(-20px);  
+    }  
+    100% {  
+        opacity: 1;  
+        transform: translateY(0);  
+    }  
 }  
 
 @keyframes fadeInUp {  
-    0% { opacity: 0; transform: translateY(20px); }  
-    100% { opacity: 1; transform: translateY(0); }  
+    0% {  
+        opacity: 0;  
+        transform: translateY(20px);  
+    }  
+    100% {  
+        opacity: 1;  
+        transform: translateY(0);  
+    }  
 }  
 
 /* Features Section */  
@@ -77,26 +94,32 @@ body {
 
 .features h2 {  
     margin-bottom: 20px;  
+    font-size: 2.5rem; /* Increased for better visibility */  
     animation: fadeIn 1s ease;  
 }  
 
 .feature-grid {  
     display: flex;  
-    justify-content: space-around;  
-    gap: 20px;  
+    justify-content: center;  
+    gap: 20px; /* Adjusted gap for better spacing */  
 }  
 
 .feature {  
-    text-align: center;  
-    transition: transform 0.3s;  
+    background: #fff; /* Adding a white background for the feature cards */  
+    padding: 20px; /* Added padding for features */  
+    border-radius: 10px; /* Rounded corners for a softer look */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */  
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */  
+    max-width: 300px; /* Ensured consistent size */  
 }  
 
 .feature:hover {  
     transform: translateY(-5px);  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */  
 }  
 
 .icon {  
-    font-size: 2rem;  
+    font-size: 2.5rem; /* Slightly increased for visibility */  
     color: #ff5a5f;  
     margin-bottom: 10px;  
 }  
@@ -108,14 +131,15 @@ body {
 }  
 
 .about-us img {  
-    width: 100%;  
+    max-width: 100%;  
     height: auto;  
+    border-radius: 10px; /* Rounded corners for images */  
     margin-top: 20px;  
 }  
 
 /* Testimonials */  
 .testimonials {  
-    background: #f4f4f4;  
+    background: #f9f9f9; /* Lighter background for contrast */  
     padding: 50px;  
     text-align: center;  
 }  
@@ -124,6 +148,7 @@ body {
     display: flex;  
     justify-content: center;  
     gap: 20px;  
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */  
 }  
 
 .testimonial {  
@@ -131,16 +156,18 @@ body {
     background: white;  
     padding: 20px;  
     border-radius: 10px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */  
     transition: transform 0.3s;  
 }  
 
 .testimonial:hover {  
     transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */  
 }  
 
 .stars {  
     color: #ff5a5f;  
-    font-size: 1.2rem;  
+    font-size: 1.5rem; /* Increased for better visibility */  
 }  
 
 /* Portfolio */  
@@ -153,133 +180,12 @@ body {
     display: flex;  
     gap: 20px;  
     justify-content: center;  
+    flex-wrap: wrap; /* Allow cards to wrap */  
 }  
 
 .portfolio-item {  
     width: 300px;  
-}  
-
-/* Blog */  
-.blog {  
-    padding: 50px;  
-}  
-
-.blog-grid {  
-    display: flex;  
-    gap: 20px;  
-    justify-content: center;  
-}  
-
-.blog-post img {  
-    width: 100%;  
-    height: auto;  
-}  
-
-/* Newsletter */  
-.newsletter {  
-    padding: 50px;  
-    background: #333;  
-    color: white;  
-    text-align: center;  
-}  
-
-.newsletter-form {  
-    display: flex;  
-    justify-content: center;  
-    gap: 10px;  
-    margin-top: 20px;  
-}  
-
-.newsletter-form input {  
-    padding: 10px;  
-    width: 250px;  
-    border: none;  
-    border-radius: 5px;  
-    transition: transform 0.3s;  
-}  
-
-.newsletter-form input:focus {  
-    transform: scale(1.05);  
-    outline: none;  
-}  
-
-.newsletter-form button {  
-    padding: 10px 20px;  
-    background: #ff5a5f;  
-    border: none;  
-    color: white;  
-    border-radius: 5px;  
-    transition: background 0.3s, transform 0.3s;  
-}  
-
-.newsletter-form button:hover {  
-    background: #ff4040;  
-    transform: translateY(-2px);  
-}  
-
-/* Footer */  
-.footer {  
-    padding: 30px;  
-    background: #333;  
-    color: white;  
-    text-align: center;  
-}  
-
-.footer-links {  
-    list-style: none;  
-    margin-bottom: 20px;  
-}  
-
-.footer-links li {  
-    display: inline-block;  
-    margin: 0 10px;  
-}  
-
-.footer-links a {  
-    color: white;  
-    text-decoration: none;  
-}  
-
-.footer-links a:hover {  
-    text-decoration: underline;  
-}  
-
-.social-media a {  
-    color: white;  
-    margin: 0 10px;  
-    font-size: 1.5rem;  
-}  
-
-/* General Button Styles */  
-.btn {  
-    background-color: #007bff;  /* Bootstrap primary color */  
-    color: white;                /* Text color */  
-    padding: 12px 20px;          /* Vertical and horizontal padding */  
-    border: none;                /* No border */  
-    border-radius: 5px;         /* Rounded corners */  
-    text-align: center;          /* Centered text */  
-    text-decoration: none;       /* Remove underline */  
-    display: inline-block;       /* Allow padding and margin */  
-    font-size: 16px;             /* Font size */  
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */  
-    width: 200px;                /* Set a fixed width for consistency */  
-}  
-
-/* Hover Effect */  
-.btn:hover {  
-    background-color: #0056b3;  /* Darker shade for hover effect */  
-    transform: translateY(-2px); /* Lift effect */  
-}  
-
-/* Active Effect */  
-.btn:active {  
-    background-color: #004085;   /* Even darker shade on click */  
-    transform: translateY(0);     /* Reset lift effect */  
-}  
-
-/* Disabled State */  
-.btn:disabled {  
-    background-color: #c0c0c0;    /* Light gray */  
-    color: #6c757d;                /* Dark gray text */  
-    cursor: not-allowed;           /* Not allowed cursor */  
-}
+    border-radius: 10px; /* Rounded corners */  
+    overflow: hidden; /* Cropping overflow */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */  
+    transition: transform 0.3
